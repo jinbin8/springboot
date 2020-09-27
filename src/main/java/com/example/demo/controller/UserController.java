@@ -26,4 +26,8 @@ public class UserController {
     public String getTest(){
         return "hello，赵老信你好----我要做最高的赵高，一人之下万人之上的赵高";
     }
+    @GetMapping("/aaa")
+    public String aaa(){
+        return "aaa";
+    }
 }
