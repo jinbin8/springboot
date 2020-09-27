@@ -1,0 +1,14 @@
+#服务器
+server:
+  port: 8888
+spring:
+  profiles:
+    include: db
+  main:
+    allow-bean-definition-overriding: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: true
+
+

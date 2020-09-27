@@ -1,0 +1,25 @@
+spring:
+  #数据源useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false
+  datasource:
+    url: jdbc:mysql://114.215.124.110:3306/test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false
+    username: root
+    password: admin
+    driver-class-name: com.mysql.jdbc.Driver
+
+#mybatis配置
+#mybatis:
+#  typeAliasesPackage: com.example.demo.entity
+#  mapperLocations: classpath:mapper/*.xml
+#  configLocation: classpath:/mybatis-config.xml
+
+mybatis-plus:
+  mapper-locations: mapper/*.xml
+  type-aliases-package: com.example.demo.entity
+  global-config:
+    id-type: 0
+    field-strategy: 2
+    capital-mode: true
+    refresh-mapper: true
+
+#  configuration:
+#    map-underscore-to-camel-case: true
