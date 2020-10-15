@@ -3,12 +3,37 @@ server:
   port: 8888
 spring:
   profiles:
-    include: db
+
+---
+server:
+  port: 8889
+spring:
+  profiles: sit
+---
+server:
+  port: 8899
+spring:
+  profiles: pro
+---
+
+spring:
+  profiles:
+    include: db,${spring.profiles.active}
   main:
     allow-bean-definition-overriding: true
   mvc:
     throw-exception-if-no-handler-found: true
   resources:
     add-mappings: true
+
+
+dog:
+  name: 小黄
+  map: {q: 1,w: 2,e: 3}
+  list:
+    - a1
+    - a2
+    - a3
+    - a4
 
 
