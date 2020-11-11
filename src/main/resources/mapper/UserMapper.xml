@@ -7,6 +7,6 @@
 
 
     <select id="getUser" resultType="com.example.demo.entity.User">
-        select * from user
+        select * from t_user
     </select>
 </mapper>

@@ -1,9 +1,9 @@
 spring:
   #数据源useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false
   datasource:
-    url: jdbc:mysql://192.168.0.48:3306/tax-dev?serverTimezone=Asia/Shanghai&characterEncoding=UTF-8&useSSL=false&useUnicode=true&autoReconnect=true&rewriteBatchedStatements=true
-    username: mihuo
-    password: Mihuo@0908
+    url: jdbc:mysql://42.192.77.158:3306/test?serverTimezone=Asia/Shanghai
+    username: root
+    password: root
     driver-class-name: com.mysql.jdbc.Driver
 
 #mybatis配置
